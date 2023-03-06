@@ -1,3 +1,8 @@
+/**
+   * genpw: Simple password generator
+   */
+
+
 #include <cassert>
 #include <climits>
 #include <cstdint>
@@ -21,7 +26,7 @@ static int rand_int(int max = INT_MAX - 1)
 
 void print_help()
 {
-   std::cout << "Usage: passwd_gen\n"
+   std::cout << "Help for genpw (by default it generates passwords with 8 lowercase letters)\n"
              << "\t-h:\t display this help\n"
              << "\t-len n:\t specify the length\n"
              << "\t-l:\t include lowercase\n"

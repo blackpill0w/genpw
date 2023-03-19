@@ -2,7 +2,6 @@
    * genpw: Simple password generator
    */
 
-
 #include <cassert>
 #include <climits>
 #include <cstdint>
@@ -42,7 +41,7 @@ enum Options
    Numbers     = 1 << 2,
    Punctuation = 1 << 3,
 };
-using PasswordGeneratorOptions = int; // Holds the options above (bit masks and haxxor shit)
+using PasswordGeneratorOptions = int; // Holds the options above
 
 struct PasswordGenerator
 {
@@ -91,9 +90,6 @@ string PasswordGenerator::generate(int length) const
    return passwd;
 }
 
-/**
- * Write your own arguments parser skid.
- **/
 PasswordGenerator parse_args(int argc, char* argv[])
 {
    PasswordGeneratorOptions opts = 0;
